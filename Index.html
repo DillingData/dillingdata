@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+
+    <title>DillingData</title>
+  </head>
+  <body>
+
+    
+    <style>
+      .btn {
+        border-radius: 10px;
+      }
+      .my-row {
+        min-height: 325px;
+      }
+      #contactUs {
+          position: fixed;
+          border-radius: 10px;
+          opacity: 1 !important; 
+          z-index: 1 m !important;
+          bottom: 0;
+          right: 0;
+          margin: 0;
+          padding: 0;
+      }
+      #content {
+          display: none;
+          opacity: 1 !important;
+          z-index: 1 !important;
+      }
+      #developmentContent {
+        display: none;
+        border-radius: 10px;
+      }
+      #projectManagement {
+        display: none;
+        border-radius: 10px;
+      }
+      #who {
+        display: none;
+        border-radius: 10px;
+      }
+      #security {
+        display: none;
+        border-radius: 10px;
+      }
+      .card {
+        border-style: solid;
+        border-color: #b58900;
+      }
+      .my-button {
+        margin-top: 5px;
+      }
+    </style>
+    
+
+    <div class="container">
+      <div class="row my-row align-items-end">
+        <div class="col-12 text-center">
+          <h1>DillingData</h1>
+          <br>
+          <button class="btn btn-outline-primary" onclick="WebDevelopment()">Web Development</button>
+          <button class="btn btn-outline-primary" onclick="ProjectManagement()">Project Management</button>
+          <button class="btn btn-outline-primary" onclick="NetworkSecurity()">Network Security</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn btn-outline-primary my-button" onclick="test()">About Me</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+      <div class="card" id="developmentContent">
+        <div class="card-header">
+          <h3>Web Development</h3>
+        </div>
+        <div class="card-body">
+          <p>Does your company need an online presence, I will create a simple yet effective online presence for your company 
+            while will help you expand customers and revenue. Websites are build with HTML, JavaScript and a CSS framework Bootstrap. 
+             <br><br>              
+               If you need more a more advanced online presence this is also possible as we will then add a backend to your website.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="card" id="projectManagement">
+        <div class="card-header">
+          <h3>Project Management</h3>
+        </div>
+        <div class="card-body">
+          <p>This is the section about Project Management</p>
+        </div>
+      </div>
+
+      <div class="card" id="security">
+        <div class="card-header">
+          <h3>Network Security</h3>
+        </div>
+        <div class="card-body">
+          <p>This is the section about Network Security</p>
+        </div>
+      </div>
+
+      <div class="card" id="who">
+        <div class="card-header">
+          <h3>About Me</h3>
+        </div>
+        <div class="card-body">
+          <p>Ambition:</p>
+          <ul>
+            <li>Creating web solutions for smaller and medium sized transport/logistics companies in ASP.NET MVC, ASP.NET Blazor or Bootstrap</li>
+            <li>Automating procedures for smaller and medium sized transport/logistics companies with C#, could be anything from checking 
+              something online that is being done every day to more complex solutions as reporting a delivery on a customer’s system, either via a website or an API.</li>
+            <li>Helping smaller and medium sized transport/logistics companies with Change Management</li>
+          </ul><br>
+          <p>Experience:</p>
+          <ul>
+            <li>Working for a major transport and logistics company as a freight forwarder from 2007 till 2018. I have experience in transportation of <br> refrigerated goods, 
+              dry goods, automotive transportation and oil & fuel transport. After this I transferred to the IT department in the same company. At that time, 
+              I started learning programming in C#. I have built an internal trade market (a web solution to maximize efficiency by offering a way to show availability of 
+              shipments to different departments) this system is currently in the process of being implemented.</li>
+              <li>I have taken a course in Change Management & Change Leadership by company <A href="https://www.pphr.dk/en-gb/">People & Performance</A> 
+                 where the following subjects were taught.</li>
+              <ul>
+                <li>The Change House</li>
+                <li>Impact Assessment</li>
+                <li>The ADKAR model</li>
+                <li>Stakeholder management</li>
+                <li>The Change radar</li>
+              </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="container">
+      <div class="row my-row">
+          <div class="card col-12 col-md-4 col-lg-3 col-xl-1" id="contactUs">
+              <button class="btn btn-outline-primary" onclick="ShowHideCardBody()">
+                  Contact Me
+              </button>
+              <div>
+                  <div class="card-body" id="content">
+                      <p>Email: <a href="mailto:thomas@dillingdata.se">thomas@dillingdata.se</a></p>
+                      <p>Phone: +46 766 33 10 50</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+
+
+    
+
+  
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="JS/Index.js"></script>
+
+  </body>
+</html>
