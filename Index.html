@@ -53,6 +53,9 @@
         display: none;
         border-radius: 10px;
       }
+      #headline {
+        width: 10rem; 
+      }
       .card {
         border-style: solid;
         border-color: #b58900;
@@ -68,16 +71,19 @@
         <div class="col-12 text-center">
           <h1>DillingData</h1>
           <br>
-          <button class="btn btn-outline-primary" onclick="WebDevelopment()">Web Development</button>
-          <button class="btn btn-outline-primary" onclick="ProjectManagement()">Portfolio</button>
+          <button class="btn btn-outline-primary" id="headline" onclick="WebDevelopment()">Web Development</button>
+          <button class="btn btn-outline-primary" is="headline" onclick="ProjectManagement()">Portfolio</button>
+          <button class="btn btn-outline-primary my-button" id="headline" onclick="test()">About Me</button>
           <!--<button class="btn btn-outline-primary" onclick="NetworkSecurity()">Network Security</button>-->
         </div>
       </div>
+      <!--
       <div class="row">
         <div class="col-12 text-center">
           <button class="btn btn-outline-primary my-button" onclick="test()">About Me</button>
         </div>
       </div>
+      -->
     </div>
 
     <br>
@@ -168,7 +174,6 @@
               <div>
                   <div class="card-body" id="content">
                       <p>Email: <a href="mailto:thomas@dillingdata.se">thomas@dillingdata.se</a></p>
-                      <p>Phone: +46 766 33 10 50</p>
                   </div>
               </div>
           </div>
