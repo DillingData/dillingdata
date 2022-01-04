@@ -3,7 +3,7 @@ var content = document.getElementById("content");
 var content2 = document.getElementById("contactUs")
 var development = document.getElementById("developmentContent");
 var management = document.getElementById("projectManagement");
-var security = document.getElementById("security");
+//var security = document.getElementById("security");
 
 window.onload = init; 
 
@@ -40,7 +40,7 @@ function ShowHideCardBody() {
         content2.classList.add("col-xl-1");
     }
 }
-
+/*
 function NetworkSecurity() {
     if (security.style.display === "none") {
         security.style.display = "block";
@@ -53,7 +53,7 @@ function NetworkSecurity() {
         security.style.display = "none";
     }
 }
-
+*/
 function WebDevelopment() {
     if (development.style.display === "none") {
         development.style.display = "block";
